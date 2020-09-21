@@ -21,7 +21,10 @@ the APIv2 tab where you can create an API key.
 
 This key must be placed into a file with the name ".apikey" and
 stored along with the script, or in the directory form which the
-utility is run.
+utility is run. Format of this file is as follows:
+```
+APIKEY=<your_api_key>
+```
 
 While creating an account is free of charge, data limits are very
 severe and make the functionality of a free account not particularly
