@@ -137,4 +137,7 @@ if __name__ == '__main__':
 
     logging.basicConfig(level=getattr(logging, args.log), format='%(asctime)s %(levelname)s %(message)s')
 
-    args.func(outfile, args)
+    if hasattr(args, 'func'):
+        args.func(outfile, args)
+    else:
+        parser.print_help()
